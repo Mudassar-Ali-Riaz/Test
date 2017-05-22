@@ -1,0 +1,21 @@
+@{
+    ViewBag.Title = "Report";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="content-wrapper" style="background-color:#fff">
+    <section class="content-header">
+        <h1>
+            Team Snap <i class="fa fa-bell-o"></i>
+            <small>Your Report </small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="#" onclick=RefreshUrl()><i class="fa fa-dashboard"></i> TeamSnap</a></li>
+            <li onclick=RefreshUrl() class="active">Report</li>
+        </ol>
+    </section>
+    <section class="content">
+        @Html.Partial("~/Views/Partials/TeamSnap/ShowReport.cshtml")
+    </section>
+
+</div>
